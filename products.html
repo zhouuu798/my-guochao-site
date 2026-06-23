@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>国潮文创 - 产品中心</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">潮起东方</div>
+        <ul>
+            <li><a href="./index.html">首页</a></li>
+            <li><a href="./products.html" class="active">国潮文创</a></li>
+            <li><a href="./about.html">关于我们</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-box">
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="switchTab('all')">全部系列</button>
+            <button class="tab-btn" onclick="switchTab('palace')">故宫系列</button>
+            <button class="tab-btn" onclick="switchTab('art')">非遗手作</button>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card" data-category="palace" onclick="openModal('故宫瑞兽盲盒', '融合故宫太和殿脊兽元素，现代盲盒潮玩设计。')">
+                <div class="prod-img" style="background: #a62424;">宫</div>
+                <h3>故宫瑞兽盲盒</h3>
+                <p>点击查看详情</p>
+            </div>
+            <div class="product-card" data-category="art" onclick="openModal('手工掐丝珐琅杯', '纯正非遗工艺，大师手工掐丝点蓝，光泽绝美。')">
+                <div class="prod-img" style="background: #246aa6;">珐</div>
+                <h3>手工掐丝珐琅杯</h3>
+                <p>点击查看详情</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">产品名称</h2>
+            <p id="modalDesc">产品详细描述信息...</p>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

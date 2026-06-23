@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们 - 互动留言</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">潮起东方</div>
+        <ul>
+            <li><a href="./index.html">首页</a></li>
+            <li><a href="./products.html">国潮文创</a></li>
+            <li><a href="./about.html" class="active">关于我们</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-box">
+        <div class="story-section">
+            <h2>品牌故事</h2>
+            <p id="typewriter" class="typewriter-text"></p>
+        </div>
+
+        <div class="form-container">
+            <h2>如果你有想法，请给我们留言</h2>
+            <form id="commentForm" onsubmit="return validateForm(event)">
+                <input type="text" id="username" placeholder="您的姓名">
+                <input type="text" id="email" placeholder="您的邮箱">
+                <textarea id="message" placeholder="留下您的建议..." rows="5"></textarea>
+                <button type="submit">提交留言</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
